@@ -1,0 +1,45 @@
+# This file configures the analyzer to check for errors, warnings, and lints.
+# See https://dart.dev/guides/language/analysis-options for details.
+
+# Include Flutter's recommended lints for good coding practices.
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  # Exclude generated files to avoid lint errors.
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "**/*.gr.dart"
+    - "build/**"
+
+  # Enable stricter type checks.
+  language:
+    strict-raw-types: true
+    strict-inference: true
+
+linter:
+  rules:
+    # Core Dart style rules
+    always_use_package_imports: true        # Prefer package: imports over relative.
+    avoid_print: true                       # Catch debug prints (e.g., in WorkScreen).
+    curly_braces_in_flow_control_structures: true  # Enforce braces for conditionals.
+    prefer_const_constructors: true         # Enforce const for widgets.
+    prefer_const_declarations: true         # Prefer const for immutable variables.
+    prefer_final_locals: true               # Make local variables final where possible.
+    sort_constructors_first: true           # Order constructors before other members.
+    unnecessary_lambdas: true               # Simplify function calls.
+
+    # Flutter-specific rules
+    avoid_unnecessary_containers: true      # Catch redundant Containers.
+    prefer_const_literals_to_create_immutables: true  # Enforce const lists/maps.
+    use_key_in_widget_constructors: true    # Require keys for widgets.
+    avoid_dynamic_calls: true               # Prevent unsafe dynamic calls (e.g., WorkScreen's dynamic data).
+    prefer_single_quotes: true              # Use single quotes for strings.
+    use_build_context_synchronously: true   # Prevent unsafe context usage.
+
+    # Additional style rules
+    camel_case_types: true                 # Enforce UpperCamelCase for types.
+    file_names: true                       # Enforce snake_case for file names.
+    non_constant_identifier_names: true    # Enforce lowerCamelCase for variables.
+
+# Additional information: https://dart.dev/lints

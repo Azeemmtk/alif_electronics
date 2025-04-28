@@ -1,0 +1,1 @@
+// MediaQuery.of(context).size.width<=394? 70.h: 18.h
