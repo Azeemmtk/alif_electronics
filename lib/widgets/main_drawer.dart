@@ -37,7 +37,7 @@ Drawer mainDrawer(BuildContext context) {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Image.asset(
-                  'assets/images/logo.png',
+                  'assets/images/appLogo.png',
                   height: 35,
                 ),
                 const SizedBox(height: 10),
