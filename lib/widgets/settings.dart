@@ -1,3 +1,4 @@
+import 'package:alif_electronics/constants/CONTs.dart';
 import 'package:alif_electronics/presentation/about_screen.dart';
 import 'package:alif_electronics/presentation/help_screen.dart';
 import 'package:alif_electronics/presentation/terms_screen.dart';
@@ -25,11 +26,11 @@ class _SettingsState extends State<Settings> with SingleTickerProviderStateMixin
             });
           },
           child: ListTile(
-            leading: const Icon(Icons.settings, color: Color(0xFF2E3B8D)),
+            leading: const Icon(Icons.settings, color: mainColor),
             title: const Text('Settings'),
             trailing: Icon(
               isSelected ? Icons.expand_less : Icons.expand_more,
-              color: const Color(0xFF2E3B8D),
+              color:  mainColor,
             ),
           ),
         ),
@@ -46,7 +47,7 @@ class _SettingsState extends State<Settings> with SingleTickerProviderStateMixin
               child: Column(
                 children: [
                   ListTile(
-                    leading: const Icon(Icons.article_outlined, color: Color(0xFF2E3B8D)),
+                    leading: const Icon(Icons.article_outlined, color: mainColor),
                     title: const Text('Terms and Services'),
                     onTap: () {
                       Navigator.push(
@@ -58,7 +59,7 @@ class _SettingsState extends State<Settings> with SingleTickerProviderStateMixin
                     },
                   ),
                   ListTile(
-                    leading: const Icon(Icons.help_outline, color: Color(0xFF2E3B8D)),
+                    leading: const Icon(Icons.help_outline, color: mainColor),
                     title: const Text('Help'),
                     onTap: () {
                       Navigator.push(
@@ -70,7 +71,7 @@ class _SettingsState extends State<Settings> with SingleTickerProviderStateMixin
                     },
                   ),
                   ListTile(
-                    leading: const Icon(Icons.help_outline, color: Color(0xFF2E3B8D)),
+                    leading: const Icon(Icons.help_outline, color: mainColor),
                     title: const Text('About us'),
                     onTap: () {
                       Navigator.push(

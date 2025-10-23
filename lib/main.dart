@@ -2,7 +2,7 @@ import 'package:alif_electronics/models/expense/expense_model.dart';
 import 'package:alif_electronics/models/spare_parts/spare_parts_model.dart';
 import 'package:alif_electronics/models/used_tv/used_tv_model.dart';
 import 'package:alif_electronics/models/work/work_model.dart';
-import 'package:alif_electronics/presentation/main_screen.dart';
+import 'package:alif_electronics/presentation/splash_screen.dart';
 import 'package:alif_electronics/provider/expense_provider.dart';
 import 'package:alif_electronics/provider/home_provider.dart';
 import 'package:alif_electronics/provider/report_provider.dart';
@@ -67,7 +67,7 @@ void main() async {
               textTheme: GoogleFonts.robotoTextTheme(),
               scaffoldBackgroundColor: Colors.white),
           debugShowCheckedModeBanner: false,
-          home: MainScreen(),
+          home: const SplashScreen(),
         ),
       ),
     ),

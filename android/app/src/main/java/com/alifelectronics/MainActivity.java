@@ -1,4 +1,4 @@
-package com.example.alif_electronics;
+package com.alifelectronics;
 
 import io.flutter.embedding.android.FlutterActivity;
 

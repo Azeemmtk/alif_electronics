@@ -110,7 +110,7 @@ class MainScreen extends StatelessWidget {
           currentIndex: provider.selectedIndex,
           backgroundColor: mainColor,
           selectedItemColor: Colors.white,
-          unselectedItemColor: const Color(0xFF8AAFC8),
+          unselectedItemColor: const Color(0xFF1a5c5a),
           type: BottomNavigationBarType.fixed,
           items: const [
             BottomNavigationBarItem(

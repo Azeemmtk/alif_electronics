@@ -58,14 +58,14 @@ Drawer mainDrawer(BuildContext context) {
             padding: EdgeInsets.zero,
             children: [
               ListTile(
-                leading: const Icon(Icons.home_filled, color: Color(0xFF2E3B8D)),
+                leading: const Icon(Icons.home_filled, color: mainColor),
                 title: const Text('Home'),
                 onTap: () {
                   Navigator.pop(context);
                 },
               ),
               ListTile(
-                leading: const Icon(Icons.event_note_sharp, color: Color(0xFF2E3B8D)),
+                leading: const Icon(Icons.event_note_sharp, color: mainColor),
                 title: const Text('Expense'),
                 onTap: () {
                   Navigator.push(
@@ -76,7 +76,7 @@ Drawer mainDrawer(BuildContext context) {
                 },
               ),
               ListTile(
-                leading: const Icon(Icons.build_outlined, color: Color(0xFF2E3B8D)),
+                leading: const Icon(Icons.build_outlined, color: mainColor),
                 title: const Text('Spare parts'),
                 onTap: () {
                   provider.loadAllData();
@@ -89,7 +89,7 @@ Drawer mainDrawer(BuildContext context) {
                 },
               ),
               ListTile(
-                leading: const Icon(Icons.add_chart, color: Color(0xFF2E3B8D)),
+                leading: const Icon(Icons.add_chart, color: mainColor),
                 title: const Text('Add spare parts'),
                 onTap: () {
                   provider.setIsSearching(false);
@@ -102,7 +102,7 @@ Drawer mainDrawer(BuildContext context) {
                 },
               ),
               ListTile(
-                leading: const Icon(Icons.work_outline, color: Color(0xFF2E3B8D)),
+                leading: const Icon(Icons.work_outline, color: mainColor),
                 title: const Text('Add Work'),
                 onTap: () {
                   Navigator.push(
@@ -114,7 +114,7 @@ Drawer mainDrawer(BuildContext context) {
                 },
               ),
               ListTile(
-                leading: const Icon(Icons.tv, color: Color(0xFF2E3B8D)),
+                leading: const Icon(Icons.tv, color: mainColor),
                 title: const Text('Add Used TV'),
                 onTap: () {
                   Navigator.push(
@@ -126,7 +126,7 @@ Drawer mainDrawer(BuildContext context) {
                 },
               ),
               ListTile(
-                leading: const Icon(Icons.cancel_outlined, color: Color(0xFF2E3B8D)),
+                leading: const Icon(Icons.cancel_outlined, color: mainColor),
                 title: const Text('Cancelled works'),
                 onTap: () {
                   Navigator.push(
@@ -138,7 +138,7 @@ Drawer mainDrawer(BuildContext context) {
                 },
               ),
               ListTile(
-                leading: const Icon(Icons.attach_money, color: Color(0xFF2E3B8D)),
+                leading: const Icon(Icons.attach_money, color: mainColor),
                 title: const Text('Monthly report'),
                 onTap: () {
                   Navigator.push(
@@ -150,7 +150,7 @@ Drawer mainDrawer(BuildContext context) {
               ),
               ListTile(
                 leading:
-                    const Icon(Icons.person_2_outlined, color: Color(0xFF2E3B8D)),
+                    const Icon(Icons.person_2_outlined, color: mainColor),
                 title: const Text('Profile'),
                 onTap: () {
                   Navigator.push(
